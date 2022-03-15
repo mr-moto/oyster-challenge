@@ -3,8 +3,8 @@ const Dropdown = ({ label, name, options, ...rest }) => {
     <div>
       <label for={name}>{label}</label>
       <select name={name} id={name} {...rest}>
-        {options?.map(({ value, country }) => (
-          <option value={value}>{country}</option>
+        {options?.map(({ meta, country }) => (
+          <option value={meta.inputIdentifier}>{country}</option>
         ))}
       </select>
     </div>
