@@ -1,8 +1,11 @@
 const Button = ({ label, ...rest }) => {
   return (
-    <div>
-      <button {...rest}>{label}</button>
-    </div>
+    <button
+      {...rest}
+      className="bg-green-400 p-2 rounded-md disabled:bg-gray-200"
+    >
+      {label}
+    </button>
   );
 };
 
