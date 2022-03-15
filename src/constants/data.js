@@ -43,7 +43,7 @@ export const data = [
   {
     country: 'Country B',
     meta: {
-      inputIdentifier: 'a',
+      inputIdentifier: 'b',
     },
     employerTaxes: [
       {
